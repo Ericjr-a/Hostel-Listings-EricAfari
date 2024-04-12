@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #FAF9F6;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+h1, h2 {
+    color: #FF7F50;
+    text-align: center;
+    margin: 20px 0;
+}
+
+form {
+    background: #ffffff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+form:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+div {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 14px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #FAFAFA;
+    transition: border-color 0.3s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+select:focus {
+    border-color: #FF7F50;
+    outline: none;
+}
+
+button, .btn-icon {
+    background-color: #FF7F50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover, .btn-icon:hover {
+    background-color: #FF6347;
+}
+
+.register-link a, .login-redirect a {
+    color: #FF7F50;
+    text-decoration: none;
+}
+
+.error {
+    color: red;
+    margin: 10px 0;
+}
+
+.hostel img {
+    max-width: 100px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.hostel form {
+    margin-top: 10px;
+}
+
+.btn-icon i {
+    pointer-events: none;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    form {
+        padding: 15px;
+    }
+
+    button, .btn-icon {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

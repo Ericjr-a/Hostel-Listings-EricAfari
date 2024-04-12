@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #FF7F50;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-bar li {
+    padding: 0 15px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.nav-bar a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-color: #FF7F50;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.hero .content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero .content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+.card img {
+    width: 100%; 
+    height: auto; 
+    object-fit: cover; 
+    display: block; 
+    border-radius: 8px 8px 0 0; 
+}
+
+
+.card p {
+    padding: 15px;
+    margin: 0;
+    background: #ffffff;
+    flex-grow: 1; 
+}
+
+.card h3, .card p {
+    padding: 15px;
+    margin: 0;
+}
+
+.card h3 {
+    background: #FFA07A;
+    color: white;
+}
+
+.reviews_section {
+    padding: 20px;
+}
+
+.reviews_section h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.reviews_section form {
+    margin-bottom: 20px;
+}
+
+.reviews_section textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.reviews_section button {
+    padding: 10px 20px;
+    background: #FF7F50;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.reviews_section .card {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    background: #f9f9f9;
+}
+
+.reviews_section .card a {
+    color: #FF7F50;
+    text-decoration: none;
+}
+
+.reviews_section .card a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .nav-bar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-bar li {
+        padding: 5px 0;
+    }
+
+    .hero .content h1,
+    .hero .content h2 {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .display_hostels .box {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+.card {
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex; 
+    flex-direction: column; 
+}
+
+
+.card a {
+    display: block; 
+    background: #FFA07A; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+    margin: -10px -10px 10px -10px; 
+    border-radius: 8px 8px 0 0; 
+    text-decoration: none; 
+    font-weight: bold;
+}
+
+.card a:hover {
+    background: #ff8c69; 
+}
+
+
+
+.display_hostels {
+    padding: 20px;
+    background: #f8f8f8;
+}
+
+.display_hostels .box {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+
+
+.review-content p {
+    padding: 15px; 
+    margin: 0; 
+}
+
+
+.review-content .review-actions {
+    text-align: right; 
+    padding: 0 15px 15px; 
+}
+
+.review-content .edit-button,
+.review-content .delete-button {
+    display: inline-block;
+    padding: 5px 10px; 
+    margin: 5px 0; 
+    background-color: white;
+    color: white; 
+    font-size: 0.8rem;
+    text-decoration: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+}
+
+.review-content .edit-button:hover,
+.review-content .delete-button:hover {
+    background-color: lightcoral; 
+}
+
+footer {
+    text-align: center; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FF7F50; 
+    color: #fff;
+    padding: 20px; 
+    font-size: 0.9rem;
+    line-height: 1.6; 
+}
+
+footer p {
+    margin-bottom: 10px; 
+}
+
+footer ul {
+    padding: 0;
+    padding-left: 20px; 
+    list-style-type: none; 
+}
+
+footer li {
+    display: block; 
+    padding: 0 10px;
+    margin-bottom: 5px; 
+}
+
+footer li::before {
+    content: "• "; 
+    color: #FF7F50; 
+    font-size: larger;
+    padding-right: 5px; 
+}
+
+
